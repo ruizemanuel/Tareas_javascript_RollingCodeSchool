@@ -1,3 +1,16 @@
+/*
+
+Ejercicios Parte 2
+
+https://docs.google.com/document/d/1ySv1jekuNFCjC7UR61j8n7UV7ZiqOyteX4Hni2K_aQM/edit
+
+*/
+
+
+
+
+
+
 // let edad = parseInt(prompt('Ingrese su edad')) 
 // if(edad > 18){
 //     alert('Usted esta habilitado para conducir')

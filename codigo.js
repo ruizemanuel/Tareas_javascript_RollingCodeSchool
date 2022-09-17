@@ -1,3 +1,14 @@
+/*
+
+Ejercicios Parte 1
+
+https://docs.google.com/document/d/1uK1b6C5CoplLNj2N7rkqzMs4-NrY9oeIUAfhpeDqfK8/edit
+
+*/
+
+
+
+
 //alert("un mensaje")
 
 //document.write("Hello World")
