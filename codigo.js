@@ -53,14 +53,14 @@ https://docs.google.com/document/d/1uK1b6C5CoplLNj2N7rkqzMs4-NrY9oeIUAfhpeDqfK8/
 // }
 
 
-// let cadena = prompt("Ingrese una frase")
-// let longcadena = cadena.length
-// for(i=0; i<longcadena; i++){
-//     if(cadena.charAt(i) === "a" || cadena.charAt(i) === "e" || cadena.charAt(i) === "i" 
-//     || cadena.charAt(i) === "o" || cadena.charAt(i) === "u"){
-//         document.write(cadena.charAt(i))
-//     }
-// }
+let cadena = prompt("Ingrese una frase")
+let longcadena = cadena.length
+for(i=0; i<longcadena; i++){
+    if(cadena.charAt(i) === "a" || cadena.charAt(i) === "e" || cadena.charAt(i) === "i" 
+    || cadena.charAt(i) === "o" || cadena.charAt(i) === "u"){
+        document.write(cadena.charAt(i))
+    }
+}
 
 
 // let num = prompt("Ingrese el numero");
@@ -71,23 +71,23 @@ https://docs.google.com/document/d/1uK1b6C5CoplLNj2N7rkqzMs4-NrY9oeIUAfhpeDqfK8/
 // document.write("No es divisible ni por 2, 3, 5 o 7");
 // }
 
-let num = prompt("Ingrese el numero");
-if (num % 2 === 0  || num % 3 === 0 || 
-    num % 5 === 0 || num % 7 === 0) {
-if(num % 2 === 0){
-    document.write("Es divisible por 2 - ")
-}
-if(num % 3 === 0){
-    document.write("Es divisible por 3 - ")
-}
-if(num % 5 === 0){
-    document.write("Es divisible por 5 - ")
-}
-if(num % 7 === 0){
-    document.write("Es divisible por 7")
-}
-} else{
-    document.write("No es divisible ni por 2, 3, 5 o 7");
-}
+// let num = prompt("Ingrese el numero");
+// if (num % 2 === 0  || num % 3 === 0 || 
+//     num % 5 === 0 || num % 7 === 0) {
+// if(num % 2 === 0){
+//     document.write("Es divisible por 2 - ")
+// }
+// if(num % 3 === 0){
+//     document.write("Es divisible por 3 - ")
+// }
+// if(num % 5 === 0){
+//     document.write("Es divisible por 5 - ")
+// }
+// if(num % 7 === 0){
+//     document.write("Es divisible por 7")
+// }
+// } else{
+//     document.write("No es divisible ni por 2, 3, 5 o 7");
+// }
 
 
