@@ -82,3 +82,30 @@
 
 
 
+/////////////////////////FILTER Y ORDENAR ARRAY DE NUMEROS////////////////////////
+
+// let numeros = [2,8,15,19,10]
+
+// let pares = numeros.filter((num) => num % 2 === 0)
+
+// let menoramayor = numeros.sort(function (a,b){
+//     return a-b
+// })
+
+// document.write(pares + '<br>')
+// document.write(menoramayor)
+
+////////////////Filtrar todos los nombres que contengan m/////////////////
+
+// let nombres = ['juan', 'pedro', 'maria', 'pablo', 'mario', 'Mariano','Ema']
+// let nombresm = nombres.filter(nombre => nombre.toLowerCase().includes('m'))
+// console.log(nombresm)
+
+
+//////////////////////FILTRAR REPETIDOS//////////////////////////////////
+
+// let numeros = [1,2,4,5,1,9,4,10]
+// let numerosunicos = numeros.filter((item,index) => numeros.indexOf(item) === index)
+// console.log(numerosunicos)
+
+
