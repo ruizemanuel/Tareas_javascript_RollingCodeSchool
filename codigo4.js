@@ -386,3 +386,165 @@
 //             break
 //     }
 // }
+
+
+
+///////////////////////// ALTERNATIVA EJERCICIO 7 USANDO A AGENDA COMO UN OBJETO ////////////////////////////////////////////////
+
+
+// console.log('Agenda de contactos')
+// console.log('Las opciones son: 1. Añadir contacto , 2. Existe contacto?, 3. Mostrar Contactos, 4. Buscar Contacto, 5. Eliminar contacto, 6. Agenda llena?, 7. huecos libres')
+
+// class Contacto {
+//     get Nombre() {
+//         return this.nombre
+//     }
+
+//     set Nombre(valor) {
+//         return this.nombre = valor
+//     }
+
+//     get Telefono() {
+//         return this.telefono
+//     }
+
+//     set Telefono(valor) {
+//         return this.telefono = valor
+//     }
+// }
+
+// let agenda = {
+
+//     arrAgenda: [],
+
+//     anadirContacto() {
+//         if (this.arrAgenda.length <= 9) {
+//             let contact = new Contacto()
+//             contact.nombre = prompt('Ingrese el nombre del contacto')
+//             contact.telefono = prompt('Ingrese el telefono del contacto')
+//             this.arrAgenda.push(contact)
+//             console.log('Contacto añadido con exito')
+//             opcion = prompt('Ingresa una opcion')
+//             mostrarMenu()
+//         } else {
+//             console.log('La agenda esta completa')
+//             opcion = prompt('Ingresa una opcion')
+//             mostrarMenu()
+//         }
+
+//     },
+
+//     existeContacto(name) {
+//         let contact = this.arrAgenda.find((contacto) => contacto.nombre === name)
+//         if (contact === undefined) {
+//             console.log('El contacto no existe')
+//             opcion = prompt('Ingresa una opcion')
+//             mostrarMenu()
+//         } else {
+//             console.log('El contacto si existe')
+//             opcion = prompt('Ingresa una opcion')
+//             mostrarMenu()
+//         }
+
+//     },
+
+//     listarContactos() {
+//         for (item of this.arrAgenda) {
+//             console.log(item)
+//         }
+//         opcion = prompt('Ingresa una opcion')
+//         mostrarMenu()
+//     },
+
+//     buscarContacto(bname) {
+//         let contact = this.arrAgenda.find((contacto) => contacto.nombre === bname)
+//         if (contact === undefined) {
+//             console.log('El contacto no existe')
+//             opcion = prompt('Ingresa una opcion')
+//             mostrarMenu()
+//         } else {
+//             console.log(`El contacto es ${contact.nombre} y su telefono es ${contact.telefono}`)
+//             opcion = prompt('Ingresa una opcion')
+//             mostrarMenu()
+//         }
+//     },
+
+//     eliminarContacto(cname) {
+//         let contact = this.arrAgenda.find((contacto) => contacto.nombre === cname)
+//         if (contact === undefined) {
+//             console.log('El contacto no existe')
+//             opcion = prompt('Ingresa una opcion')
+//             mostrarMenu()
+//         } else {
+//             const index = this.arrAgenda.indexOf(contact)
+//             this.arrAgenda.splice(index, 1)
+//             console.log(`El contacto se ha eliminado con exito`)
+//             opcion = prompt('Ingresa una opcion')
+//             mostrarMenu()
+//         }
+//     },
+//     agendaLlena() {
+//         if (this.arrAgenda.length < 10) {
+//             console.log('La agenda no esta completa')
+//             opcion = prompt('Ingresa una opcion')
+//             mostrarMenu()
+//         } else {
+//             console.log('La agenda esta completa')
+//             opcion = prompt('Ingresa una opcion')
+//             mostrarMenu()
+//         }
+//     },
+
+//     huecosLibres() {
+//         if (this.arrAgenda.length < 10) {
+//             let contactosLibres = 10 - this.arrAgenda.length
+//             console.log(`Es posible ingresar ${contactosLibres} contactos mas`)
+//             opcion = prompt('Ingresa una opcion')
+//             mostrarMenu()
+//         } else {
+//             console.log('La agenda esta completa')
+//             opcion = prompt('Ingresa una opcion')
+//             mostrarMenu()
+//         }
+//     }
+
+// }
+
+
+// opcion = prompt('Ingresa una opcion')
+// mostrarMenu()
+
+// function mostrarMenu() {
+//     switch (opcion) {
+//         case '1':
+//             agenda.anadirContacto()
+//             break
+
+//         case '2':
+//             let name = prompt('Ingrese el nombre del contacto a verificar si existe')
+//             agenda.existeContacto(name)
+//             break
+
+//         case '3':
+//             agenda.listarContactos()
+//             break
+//         case '4':
+//             let bname = prompt('Ingrese el nombre del contacto a buscar')
+//             agenda.buscarContacto(bname)
+//             break
+//         case '5':
+//             let cname = prompt('Ingrese el nombre del contacto a eliminar')
+//             agenda.eliminarContacto(cname)
+//             break
+//         case '6':
+//             agenda.agendaLlena()
+//             break
+//         case '7':
+//             agenda.huecosLibres()
+//             break
+
+//         default:
+//             opcion = prompt('Ingresa una opcion')
+//             mostrarMenu()
+//     }
+// }
